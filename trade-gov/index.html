@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  <title>Trade Gov Demo</title>
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+</head>
+<body>
+<section class="section">
+  <div class="container">
+    <h1 class="title">
+      Trade Gov Leads
+    </h1>
+    <table class="table"
+           id="table">
+      <thead>
+      <th>Name</th>
+      <th>Industry</th>
+      <th>Location</th>
+      <th>Lead</th>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</section>
+
+<script type="text/javascript">
+  (() => {
+    const table = document.getElementById('table');
+
+    function insertRow(ar) {
+      const row = table.insertRow();
+      ar.forEach((text) => {
+        const cell = row.insertCell();
+        const textNode = document.createTextNode(text);
+        cell.appendChild(textNode);
+      })
+    }
+
+    insertRow(['Trevor', 'Fishing', 'Canada', 'This is Text!']);
+
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "api-demos",
+  "version": "1.0.0",
+  "description": "Different APIs, demoing use cases and learning.",
+  "main": "index.js",
+  "scripts": {
+    "trade-gov": "static -p 4000 ./trade-gov",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tewen/api-demos.git"
+  },
+  "author": "Trevor Ewen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tewen/api-demos/issues"
+  },
+  "homepage": "https://github.com/tewen/api-demos#readme",
+  "dependencies": {
+    "axios": "^0.19.2"
+  },
+  "devDependencies": {
+    "node-static": "^0.7.11"
+  }
+}
